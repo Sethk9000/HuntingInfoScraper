@@ -1,0 +1,482 @@
+Species,Harvest,Hunters,Days
+Chukar Partridge,"8,305","1,480","8,294"
+Cottontail Rabbit,"1,651",837,"8,405"
+Duck,"399,088","22,470","194,327"
+Forest Grouse,"43,194","18,066","146,877"
+Gray Partridge,"1,503",507,"4,552"
+Late Goose,"58,281","7,516","53,390"
+Mourning Dove,"28,440","1,961","7,128"
+Pheasant (Eastern WA),"28,089","8,276","40,365"
+Pheasant (Western WA),"24,471","3,409","29,348"
+Quail (All Species),"27,566","4,015","24,138"
+September Canada Goose,"3,200",869,"2,783"
+Snipe,446,120,327
+Snowshoe Hare,329,260,"1,691"
+Adams,113,11,59
+Asotin,"1,299",186,874
+Benton,157,55,278
+Chelan,676,265,"1,269"
+Clallam,0,0,0
+Clark,0,0,0
+Columbia,9,7,9
+Cowlitz,0,0,0
+Douglas,"1,914",150,"1,072"
+Ferry,0,0,0
+Franklin,12,9,20
+Garfield,32,31,67
+Grant,82,87,314
+Grays Harbor,0,0,0
+Island,0,0,0
+Jefferson,0,0,0
+King,0,0,0
+Kitsap,0,0,0
+Kittitas,"2,324",337,"2,011"
+Klickitat,132,55,506
+Lewis,0,0,0
+Lincoln,29,22,60
+Mason,0,0,0
+Okanogan,214,126,413
+Pacific,0,0,0
+Pend Oreille,0,0,0
+Pierce,0,0,0
+San Juan,0,0,0
+Skagit,0,0,0
+Skamania,0,0,0
+Snohomish,0,0,0
+Spokane,48,22,130
+Stevens,0,0,0
+Thurston,0,0,0
+Wahkiakum,0,0,0
+Walla Walla,22,9,19
+Whatcom,0,0,0
+Whitman,128,121,293
+Yakima,"1,114",208,900
+Adams,26,16,89
+Asotin,35,22,56
+Benton,48,18,117
+Chelan,8,16,29
+Clallam,36,31,257
+Clark,98,42,304
+Columbia,0,0,0
+Cowlitz,50,48,627
+Douglas,50,23,105
+Ferry,45,38,404
+Franklin,47,19,47
+Garfield,13,12,31
+Grant,37,50,99
+Grays Harbor,49,43,247
+Island,36,25,81
+Jefferson,7,13,52
+King,67,61,286
+Kitsap,15,22,114
+Kittitas,28,42,140
+Klickitat,6,10,41
+Lewis,45,52,529
+Lincoln,71,31,139
+Mason,13,21,158
+Okanogan,27,39,76
+Pacific,15,17,84
+Pend Oreille,23,37,192
+Pierce,47,51,483
+San Juan,17,12,32
+Skagit,23,31,70
+Skamania,6,13,19
+Snohomish,15,41,189
+Spokane,15,17,31
+Stevens,25,58,129
+Thurston,72,59,647
+Wahkiakum,5,9,15
+Walla Walla,10,12,12
+Whatcom,109,53,283
+Whitman,9,11,20
+Yakima,403,94,"2,171"
+Adams,"7,707",792,"2,412"
+Asotin,"1,165",79,"1,402"
+Benton,"40,349","1,825","15,589"
+Chelan,"2,627",253,"1,334"
+Clallam,"2,491",230,"1,589"
+Clark,"14,578","1,161","8,433"
+Columbia,"1,438",86,538
+Cowlitz,"2,273",285,"1,272"
+Douglas,"4,474",328,"1,995"
+Ferry,82,21,55
+Franklin,"24,751","1,185","10,775"
+Garfield,858,67,411
+Grant,"64,364","3,693","28,871"
+Grays Harbor,"14,121",788,"6,895"
+Island,"2,292",240,"1,454"
+Jefferson,"2,402",224,"1,009"
+King,"7,562",711,"3,910"
+Kitsap,660,120,621
+Kittitas,"4,428",342,"2,310"
+Klickitat,"1,681",165,910
+Lewis,"5,914",424,"3,266"
+Lincoln,"2,468",379,"2,023"
+Mason,"2,439",294,"2,040"
+Okanogan,"3,405",264,"1,848"
+Pacific,"4,472",293,"1,819"
+Pend Oreille,"2,756",279,"1,818"
+Pierce,"6,448",590,"4,311"
+San Juan,500,62,375
+Skagit,"57,580","2,922","28,547"
+Skamania,520,69,251
+Snohomish,"20,212","1,558","10,991"
+Spokane,"4,396",490,"3,229"
+Stevens,"4,030",285,"1,963"
+Thurston,"8,098",509,"4,048"
+Wahkiakum,"3,848",209,"1,446"
+Walla Walla,"18,743","1,221","8,767"
+Whatcom,"26,158","1,351","12,634"
+Whitman,"2,702",207,"1,600"
+Yakima,"24,096","1,283","11,566"
+Adams,0,0,0
+Asotin,318,192,"1,370"
+Benton,0,0,0
+Chelan,"2,224",936,"7,857"
+Clallam,"2,272",860,"5,574"
+Clark,492,337,"2,481"
+Columbia,151,172,732
+Cowlitz,"1,274",881,"7,301"
+Douglas,226,127,430
+Ferry,"2,403",748,"4,638"
+Franklin,0,0,0
+Garfield,69,75,255
+Grant,0,0,0
+Grays Harbor,"3,601",826,"10,972"
+Island,0,0,0
+Jefferson,"1,467",401,"2,825"
+King,845,405,"2,820"
+Kitsap,66,65,261
+Kittitas,"1,266","1,040","5,877"
+Klickitat,417,271,"1,749"
+Lewis,"2,939","1,315","14,871"
+Lincoln,199,128,441
+Mason,"2,313",799,"9,390"
+Okanogan,"7,555","2,052","18,578"
+Pacific,906,448,"4,108"
+Pend Oreille,"1,279",651,"3,636"
+Pierce,901,466,"2,929"
+San Juan,0,0,0
+Skagit,"1,086",509,"2,893"
+Skamania,"1,473",666,"5,203"
+Snohomish,846,576,"3,753"
+Spokane,339,384,"1,488"
+Stevens,"3,212","1,486","9,725"
+Thurston,615,490,"4,259"
+Wahkiakum,318,164,"1,593"
+Walla Walla,144,100,391
+Whatcom,580,387,"3,076"
+Whitman,20,21,48
+Yakima,"1,378",896,"5,353"
+Adams,12,17,54
+Asotin,173,58,289
+Benton,110,44,203
+Chelan,33,25,271
+Clallam,0,0,0
+Clark,0,0,0
+Columbia,55,35,163
+Cowlitz,0,0,0
+Douglas,82,53,315
+Ferry,0,0,0
+Franklin,23,12,22
+Garfield,104,42,303
+Grant,48,65,429
+Grays Harbor,0,0,0
+Island,0,0,0
+Jefferson,0,0,0
+King,0,0,0
+Kitsap,0,0,0
+Kittitas,392,62,727
+Klickitat,0,0,0
+Lewis,0,0,0
+Lincoln,131,77,408
+Mason,0,0,0
+Okanogan,65,64,297
+Pacific,0,0,0
+Pend Oreille,0,0,0
+Pierce,0,0,0
+San Juan,0,0,0
+Skagit,0,0,0
+Skamania,0,0,0
+Snohomish,0,0,0
+Spokane,20,15,45
+Stevens,0,0,0
+Thurston,0,0,0
+Wahkiakum,0,0,0
+Walla Walla,21,10,15
+Whatcom,0,0,0
+Whitman,131,53,671
+Yakima,103,44,340
+Adams,"2,818",403,"1,762"
+Asotin,223,40,895
+Benton,"10,820",702,"7,035"
+Chelan,151,104,460
+Clallam,95,64,308
+Clark,0,0,0
+Columbia,105,50,131
+Cowlitz,0,0,0
+Douglas,590,153,734
+Ferry,156,27,296
+Franklin,"6,927",640,"4,199"
+Garfield,38,23,64
+Grant,"16,252","2,394","12,922"
+Grays Harbor,0,0,0
+Island,95,51,170
+Jefferson,77,53,191
+King,464,154,821
+Kitsap,30,32,129
+Kittitas,511,120,559
+Klickitat,0,0,0
+Lewis,949,132,851
+Lincoln,"1,028",166,791
+Mason,177,72,420
+Okanogan,312,85,281
+Pacific,0,0,0
+Pend Oreille,982,196,"1,223"
+Pierce,912,153,"1,067"
+San Juan,116,43,123
+Skagit,"1,718",344,"2,684"
+Skamania,87,40,117
+Snohomish,746,238,"1,682"
+Spokane,"2,977",393,"2,936"
+Stevens,"1,193",169,"1,164"
+Thurston,639,137,853
+Wahkiakum,0,0,0
+Walla Walla,"1,627",284,"1,833"
+Whatcom,"1,840",321,"2,914"
+Whitman,263,79,249
+Yakima,"3,363",496,"3,526"
+Adams,"1,078",112,303
+Asotin,271,34,176
+Benton,"2,735",140,559
+Chelan,206,33,76
+Clallam,0,0,0
+Clark,648,39,147
+Columbia,79,16,36
+Cowlitz,43,21,57
+Douglas,"1,082",95,234
+Ferry,7,8,9
+Franklin,"3,153",171,677
+Garfield,93,26,31
+Grant,"8,938",626,"1,861"
+Grays Harbor,146,26,87
+Island,53,8,9
+Jefferson,0,0,0
+King,190,25,42
+Kitsap,26,11,16
+Kittitas,520,36,108
+Klickitat,10,10,12
+Lewis,90,26,48
+Lincoln,211,34,78
+Mason,7,12,20
+Okanogan,391,55,112
+Pacific,0,0,0
+Pend Oreille,7,10,15
+Pierce,86,15,30
+San Juan,0,0,0
+Skagit,95,16,35
+Skamania,0,0,0
+Snohomish,56,19,30
+Spokane,292,45,136
+Stevens,22,13,22
+Thurston,111,32,84
+Wahkiakum,0,0,0
+Walla Walla,642,85,272
+Whatcom,78,17,24
+Whitman,156,33,93
+Yakima,"6,918",412,"1,689"
+Adams,"1,171",281,"1,307"
+Asotin,333,122,447
+Benton,"1,139",365,"1,433"
+Chelan,333,224,726
+Clallam,16,6,25
+Clark,"2,867",528,"3,894"
+Columbia,"1,376",357,"2,173"
+Cowlitz,506,85,514
+Douglas,216,160,576
+Ferry,238,74,196
+Franklin,"1,993",625,"2,894"
+Garfield,"1,955",475,"1,851"
+Grant,"5,527","1,893","9,224"
+Grays Harbor,880,153,"1,333"
+Island,826,97,678
+Jefferson,16,19,28
+King,"1,691",381,"2,950"
+Kitsap,47,26,111
+Kittitas,234,140,429
+Klickitat,94,61,232
+Lewis,"1,467",206,"1,395"
+Lincoln,"1,571",542,"2,130"
+Mason,"2,006",218,"1,706"
+Okanogan,400,223,945
+Pacific,288,57,326
+Pend Oreille,19,18,30
+Pierce,"2,502",183,"1,910"
+San Juan,12,7,15
+Skagit,130,54,122
+Skamania,7,11,25
+Snohomish,"2,381",511,"3,756"
+Spokane,"1,366",512,"1,653"
+Stevens,95,56,143
+Thurston,"5,190",662,"6,016"
+Wahkiakum,60,14,67
+Walla Walla,"2,557",863,"4,024"
+Whatcom,"3,579",494,"4,477"
+Whitman,"5,387","1,184","5,773"
+Yakima,"2,085",695,"4,179"
+Adams,"1,118",116,636
+Asotin,136,57,170
+Benton,"1,214",223,"1,557"
+Chelan,"1,137",197,"1,323"
+Clallam,88,38,70
+Clark,5,8,7
+Columbia,769,126,689
+Cowlitz,14,12,14
+Douglas,"1,618",221,863
+Ferry,15,21,60
+Franklin,"1,165",211,996
+Garfield,384,76,581
+Grant,"4,520",883,"4,376"
+Grays Harbor,10,10,17
+Island,2,11,48
+Jefferson,21,14,56
+King,4,7,6
+Kitsap,7,11,11
+Kittitas,218,126,373
+Klickitat,105,73,431
+Lewis,10,25,41
+Lincoln,"1,460",236,"1,153"
+Mason,19,30,126
+Okanogan,"2,188",357,"1,676"
+Pacific,0,0,0
+Pend Oreille,190,28,152
+Pierce,21,19,64
+San Juan,0,0,0
+Skagit,2,8,10
+Skamania,8,17,34
+Snohomish,3,8,10
+Spokane,"1,817",224,"1,468"
+Stevens,70,52,145
+Thurston,47,28,93
+Wahkiakum,10,7,32
+Walla Walla,"1,590",234,"1,387"
+Whatcom,3,8,9
+Whitman,733,179,"1,043"
+Yakima,"6,845",657,"4,411"
+Adams,39,17,19
+Asotin,0,0,0
+Benton,135,54,56
+Chelan,26,16,25
+Clallam,42,12,17
+Clark,115,93,205
+Columbia,17,11,17
+Cowlitz,33,23,34
+Douglas,77,25,33
+Ferry,0,0,0
+Franklin,51,31,41
+Garfield,0,0,0
+Grant,176,86,158
+Grays Harbor,62,63,182
+Island,19,17,20
+Jefferson,13,11,12
+King,31,14,18
+Kitsap,10,16,26
+Kittitas,255,32,70
+Klickitat,63,21,48
+Lewis,84,34,57
+Lincoln,242,33,221
+Mason,14,11,16
+Okanogan,67,23,25
+Pacific,23,13,16
+Pend Oreille,96,36,134
+Pierce,61,39,64
+San Juan,34,19,25
+Skagit,149,73,111
+Skamania,38,26,45
+Snohomish,126,52,131
+Spokane,279,56,332
+Stevens,46,41,61
+Thurston,52,33,61
+Wahkiakum,61,39,68
+Walla Walla,80,24,110
+Whatcom,288,87,147
+Whitman,143,41,106
+Yakima,153,45,72
+Adams,7,7,6
+Asotin,0,0,0
+Benton,15,12,22
+Chelan,6,8,8
+Clallam,0,0,0
+Clark,3,7,4
+Columbia,0,0,0
+Cowlitz,3,9,5
+Douglas,5,7,9
+Ferry,0,0,0
+Franklin,0,0,0
+Garfield,3,8,6
+Grant,61,23,43
+Grays Harbor,91,21,35
+Island,0,0,0
+Jefferson,0,0,0
+King,9,11,17
+Kitsap,0,0,0
+Kittitas,4,7,6
+Klickitat,0,0,0
+Lewis,3,7,4
+Lincoln,0,0,0
+Mason,0,0,0
+Okanogan,0,0,0
+Pacific,0,0,0
+Pend Oreille,0,0,0
+Pierce,0,0,0
+San Juan,0,0,0
+Skagit,124,18,30
+Skamania,0,0,0
+Snohomish,72,21,74
+Spokane,3,7,5
+Stevens,0,0,0
+Thurston,7,8,7
+Wahkiakum,0,0,0
+Walla Walla,7,10,8
+Whatcom,11,10,12
+Whitman,4,9,15
+Yakima,8,13,11
+Adams,0,0,0
+Asotin,8,10,10
+Benton,0,0,0
+Chelan,12,15,56
+Clallam,2,10,12
+Clark,0,0,0
+Columbia,0,0,0
+Cowlitz,0,0,0
+Douglas,0,0,0
+Ferry,21,24,274
+Franklin,0,0,0
+Garfield,0,0,0
+Grant,0,0,0
+Grays Harbor,2,8,6
+Island,0,0,0
+Jefferson,2,10,9
+King,3,9,13
+Kitsap,2,8,12
+Kittitas,18,27,69
+Klickitat,0,0,0
+Lewis,5,10,21
+Lincoln,5,8,12
+Mason,3,10,11
+Okanogan,138,67,432
+Pacific,0,0,0
+Pend Oreille,29,42,302
+Pierce,2,12,8
+San Juan,0,0,0
+Skagit,4,11,11
+Skamania,5,9,32
+Snohomish,0,0,0
+Spokane,6,14,29
+Stevens,24,40,167
+Thurston,0,0,0
+Wahkiakum,0,0,0
+Walla Walla,0,0,0
+Whatcom,6,15,36
+Whitman,0,0,0
+Yakima,32,30,169

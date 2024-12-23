@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
+import re
 
 def fetch_html(url):
     """Fetches the HTML content of a given URL."""
@@ -27,47 +28,78 @@ def parse_harvest_data(html, base_url):
         links = list(set(links))
 
         for link in links:
-            print(f"Processing: {species_name} - {link.text.strip()}")
-            visited_links.add(link['href'])
             report_url = link['href']
+            if report_url in visited_links:
+                continue
+            visited_links.add(report_url)
+            print(f"Processing: {species_name} - {link.text.strip()} - {report_url}")
             if not report_url.startswith('http'):
                 report_url = base_url + report_url
-            report_html = fetch_html(report_url)
-            report_data = parse_report_page(report_html)
-            data_by_species[species_name] = report_data
+            try:
+                report_html = fetch_html(report_url)
+                report_data = parse_report_page(report_html)
+                if species_name not in data_by_species:
+                    data_by_species[species_name] = []
+                data_by_species[species_name].append({
+                    "link_text": link.text.strip(),
+                    "report_url": report_url,
+                    "data": report_data
+                })
+            except Exception as e:
+                print(f"Failed to process {report_url}: {e}")
 
     return data_by_species
 
 def parse_report_page(html):
     """Parses the individual report page and extracts table data."""
     soup = BeautifulSoup(html, 'html.parser')
-    table = soup.find('table')
+    tables = soup.find_all('table')
 
-    if not table:
-        return {"headers": [], "rows": []}
+    report_data = []
+    for table in tables:
+        caption = table.find('caption').text.strip() if table.find('caption') else 'No Caption'
+        rows = table.find_all('tr')
+        headers = [th.text.strip() for th in rows[0].find_all('th')]
 
-    rows = table.find_all('tr')
-    headers = [th.text.strip() for th in rows[0].find_all('th')]
+        table_data = []
+        for row in rows[1:]:
+            cells = [cell.text.strip() for cell in row.find_all(['td', 'th'])]
+            table_data.append(cells)
 
-    table_data = []
-    for row in rows[1:]:
-        cells = [cell.text.strip() for cell in row.find_all(['td', 'th'])]
-        table_data.append(cells)
+        report_data.append({
+            "caption": caption,
+            "headers": headers,
+            "rows": table_data
+        })
 
-    return {
-        "headers": headers,
-        "rows": table_data
-    }
+    return report_data
+
+def sanitize_filename(filename):
+    """Sanitizes the filename by removing or replacing invalid characters."""
+    return re.sub(r'[<>:"/\\|?*]', '_', filename)
 
 def save_to_csv(data_by_species, output_dir):
     """Saves the extracted data to CSV files categorized by species."""
     os.makedirs(output_dir, exist_ok=True)
 
-    for species, data in data_by_species.items():
-        filename = os.path.join(output_dir, f"{species.replace(' ', '_')}.csv")
-        df = pd.DataFrame(data["rows"], columns=data["headers"])
-        df.to_csv(filename, index=False)
-        print(f"Saved: {filename}")
+    for species, reports in data_by_species.items():
+        species_dir = os.path.join(output_dir, sanitize_filename(species.replace(' ', '_')))
+        os.makedirs(species_dir, exist_ok=True)
+        aggregated_data = {}
+        for report in reports:
+            for table in report["data"]:
+                category = sanitize_filename(report['link_text'].replace(' ', '_'))
+                if category not in aggregated_data:
+                    aggregated_data[category] = {"headers": table["headers"], "rows": []}
+                aggregated_data[category]["rows"].extend(table["rows"])
+
+        for category, data in aggregated_data.items():
+            filename = os.path.join(species_dir, f"{category}.csv")
+            headers = data["headers"]
+            rows = [row[:len(headers)] + [''] * (len(headers) - len(row)) for row in data["rows"]]
+            df = pd.DataFrame(rows, columns=headers)
+            df.to_csv(filename, index=False)
+            print(f"Saved: {filename}")
 
 def main():
     base_url = "https://wdfw.wa.gov"

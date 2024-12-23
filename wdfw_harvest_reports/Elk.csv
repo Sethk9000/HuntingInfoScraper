@@ -1,6 +1,41 @@
-Method,Antlerless Harvest,Antlered Harvest,Total Harvest,1 Point,2 Point,3 Point,4 Point,5 Point,6+ Point,Number Hunters,Hunter Success,Hunter Days,Days/Kill
-Archery,2,4,6,0,0,0,2,0,2,99,6%,582,97
-Modern Firearm,0,3,3,3,0,0,0,0,0,133,2%,462,154
-Multiple Weapons,0,0,0,0,0,0,0,0,0,11,0%,67,0
-Muzzleloader,0,5,5,2,0,0,0,0,3,53,9%,190,38
-Totals,2,12,14,5,0,0,2,0,5,n/a,n/a,n/a,n/a
+GMU,Antlerless Harvest,Antlered Harvest,Total Harvest,1 Point,2 Point,3 Point,4 Point,5 Point,6+ Point
+"101
+                - SHERMAN",3,13,16,5,0,0,2,0,6
+"105
+                - KELLY HILL",1,16,17,3,0,0,0,9,4
+"108
+                - DOUGLAS",4,21,25,8,0,0,4,7,2
+"111
+                - ALADDIN",2,16,18,4,0,0,0,12,0
+"113
+                - SELKIRK",13,33,46,9,2,0,2,14,6
+"117
+                - 49 DEGREES NORTH",27,40,67,16,3,0,3,12,6
+"121
+                - HUCKLEBERRY",5,124,129,26,13,10,12,35,28
+Totals,55,263,318,71,18,10,23,89,52
+513,1,1,1,100%,0,1,1,0,0
+"101
+                - SHERMAN",1,1,2,0,0,0,0,0,1
+"105
+                - KELLY HILL",1,0,1,0,0,0,0,0,0
+"108
+                - DOUGLAS",2,0,2,0,0,0,0,0,0
+"111
+                - ALADDIN",2,0,2,0,0,0,0,0,0
+"113
+                - SELKIRK",6,0,6,0,0,0,0,0,0
+"117
+                - 49 DEGREES NORTH",13,0,13,0,0,0,0,0,0
+"121
+                - HUCKLEBERRY",4,0,4,0,0,0,0,0,0
+Totals,29,1,30,0,0,0,0,0,1
+Archery,2,4,6,0,0,0,2,0,2
+Modern Firearm,0,3,3,3,0,0,0,0,0
+Multiple Weapons,0,0,0,0,0,0,0,0,0
+Muzzleloader,0,5,5,2,0,0,0,0,3
+Totals,2,12,14,5,0,0,2,0,5
+Archery,"1,106",131,"1,237",772,465,"12,507",10%,,
+Modern Firearm,"1,956",669,"2,625","1,870",755,"28,086",9%,,
+Muzzleloader,946,201,"1,147",788,359,"9,496",12%,,
+Statewide Total,"4,008","1,001","5,009","3,430","1,579","50,089",10%,,
