@@ -10,7 +10,7 @@ def fetch_html(url):
     response.raise_for_status()  # Raise an exception for HTTP errors
     return response.text
 
-def parse_harvest_data(html, base_url):
+def parse_harvest_data(html, base_url, year):
     """Parses the HTML and extracts big game harvest data."""
     soup = BeautifulSoup(html, 'html.parser')
     data_by_species = {}
@@ -18,14 +18,19 @@ def parse_harvest_data(html, base_url):
 
     # Find all species sections
     species_sections = soup.find_all('h3')
-    # Ensure the elements in species_sections are distinct
-    species_sections = list(set(species_sections))
     for section in species_sections:
         species_name = section.text.strip()
         print(f"Processing species: {species_name}")
         links = section.find_next('ul').find_all('a')
-        # Ensure the links are distinct
+        # Ensure the links are distinct, and only process links for the relevant year. Example link format: /hunting/management/game-harvest/2019/deer-statewide
         links = list(set(links))
+        links_cleaned = []
+        for link in links:
+            if not link['href'].startswith(f"/hunting/management/game-harvest/{year}"):
+                print(f"Skipping: {link['href']} - doesn't match format /hunting/management/game-harvest/{year}")
+                continue
+            links_cleaned.append(link)
+        links = links_cleaned
 
         for link in links:
             report_url = link['href']
@@ -78,7 +83,7 @@ def sanitize_filename(filename):
     """Sanitizes the filename by removing or replacing invalid characters."""
     return re.sub(r'[<>:"/\\|?*]', '_', filename)
 
-def save_to_csv(data_by_species, output_dir):
+def save_to_csv(data_by_species, output_dir, year):
     """Saves the extracted data to CSV files categorized by species."""
     os.makedirs(output_dir, exist_ok=True)
 
@@ -94,7 +99,7 @@ def save_to_csv(data_by_species, output_dir):
                 aggregated_data[category]["rows"].extend(table["rows"])
 
         for category, data in aggregated_data.items():
-            filename = os.path.join(species_dir, f"{category}.csv")
+            filename = os.path.join(species_dir, f"{category}_{year}.csv")
             headers = data["headers"]
             rows = [row[:len(headers)] + [''] * (len(headers) - len(row)) for row in data["rows"]]
             df = pd.DataFrame(rows, columns=headers)
@@ -103,17 +108,27 @@ def save_to_csv(data_by_species, output_dir):
 
 def main():
     base_url = "https://wdfw.wa.gov"
-    url = base_url + "/hunting/management/game-harvest#2023-harvest"
     output_dir = "wdfw_harvest_reports"
 
-    print("Fetching HTML content...")
-    html = fetch_html(url)
+    harvest_years = [
+        "/hunting/management/game-harvest#2023-harvest",
+        "/hunting/management/game-harvest#2022-harvest",
+        "/hunting/management/game-harvest#2021-harvest",
+        "/hunting/management/game-harvest#2020-harvest"
+        ]
 
-    print("Parsing harvest data...")
-    data_by_species = parse_harvest_data(html, base_url)
+    for year in harvest_years:
+        print(f"Processing harvest year: {year}")
+        url = base_url + year
+        print("Fetching HTML content...")
+        html = fetch_html(url)
 
-    print("Saving data to CSV files...")
-    save_to_csv(data_by_species, output_dir)
+        print("Parsing harvest data...")
+        year = year.split("#")[1].split("-")[0]
+        data_by_species = parse_harvest_data(html, base_url, year)
+
+        print("Saving data to CSV files...")
+        save_to_csv(data_by_species, output_dir, year)
 
     print("All data saved successfully!")
 
